@@ -1,11 +1,5 @@
 ﻿using NUnit.Framework;
-using OpenQA.Selenium.Support.UI;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnitTestProject1.Core;
 using UnitTestProject1.Pages;
 
 namespace UnitTestProject1.Helpers
@@ -24,9 +18,9 @@ namespace UnitTestProject1.Helpers
 
         public static void CheckErrorMessageDisplayed() {
           
-                Console.WriteLine("Checking if error message is present");
-                Assert.IsTrue(SignInPage.GetSignInPage.GetErrorMsg().Displayed);
-                Console.WriteLine("Error message is present");
+            Console.WriteLine("Checking if error message is present");
+            Assert.IsTrue(SignInPage.GetSignInPage.GetErrorMsg().Displayed);
+            Console.WriteLine("Error message is present");
         }
         public static void CheckSuccessfulSignIn()
         {

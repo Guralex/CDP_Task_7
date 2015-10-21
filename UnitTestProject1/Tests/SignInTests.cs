@@ -1,7 +1,4 @@
-﻿using System;
-using UnitTestProject1.Core;
-using NUnit.Framework;
-using UnitTestProject1.Pages;
+﻿using NUnit.Framework;
 using UnitTestProject1.Helpers;
 using System.Configuration;
 
