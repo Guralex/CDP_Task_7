@@ -19,13 +19,13 @@ namespace UnitTestProject1.Helpers
         public static void CheckErrorMessageDisplayed() {
           
             Console.WriteLine("Checking if error message is present");
-            Assert.IsTrue(SignInPage.GetSignInPage.GetErrorMsg().Displayed);
+            Assert.IsTrue(SignInPage.GetSignInPage.GetErrorMsg().Displayed,"Error message is NOT displayed");
             Console.WriteLine("Error message is present");
         }
         public static void CheckSuccessfulSignIn()
         {
             Console.WriteLine("Checking if user is successfully authorized.");
-            Assert.IsTrue(HeaderComponent.GetHeaderInstance.GetSignOutLink().Displayed);
+            Assert.IsTrue(HeaderComponent.GetHeaderInstance.GetSignOutLink().Displayed,"User is NOT successfully authorized.");
             Console.WriteLine("User is successfully authorized.");
 
         }

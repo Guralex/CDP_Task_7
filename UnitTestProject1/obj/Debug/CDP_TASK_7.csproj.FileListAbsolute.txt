@@ -3,7 +3,6 @@ C:\Users\Oleksandr_Gura\documents\visual studio 2015\Projects\CDP_Task\UnitTestP
 C:\Users\Oleksandr_Gura\documents\visual studio 2015\Projects\CDP_Task\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\Oleksandr_Gura\documents\visual studio 2015\Projects\CDP_Task\UnitTestProject1\obj\Debug\UnitTestProject1.dll
 C:\Users\Oleksandr_Gura\documents\visual studio 2015\Projects\CDP_Task\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
-C:\Users\Oleksandr_Gura\documents\visual studio 2015\Projects\CDP_Task\UnitTestProject1\obj\Debug\CDP_TASK_7.csprojResolveAssemblyReference.cache
 C:\Users\Oleksandr_Gura\documents\visual studio 2015\Projects\CDP_Task\UnitTestProject1\bin\Debug\nunit.framework.dll
 C:\Users\Oleksandr_Gura\documents\visual studio 2015\Projects\CDP_Task\UnitTestProject1\bin\Debug\nunit.mocks.dll
 C:\Users\Oleksandr_Gura\documents\visual studio 2015\Projects\CDP_Task\UnitTestProject1\bin\Debug\pnunit.framework.dll

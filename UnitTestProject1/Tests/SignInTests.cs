@@ -8,20 +8,38 @@ namespace UnitTestProject1
     {
 
         [Test]
+        public void ValidCredsLogin()
+        {
+            SignInHelper.SignIn(ConfigurationManager.AppSettings["ValidLogin"],
+                ConfigurationManager.AppSettings["ValidPassword"]);
+            SignInHelper.CheckSuccessfulSignIn();
+        }
+
+        [Test]
         public void InvalidCredsLogin()
-        { 
+        {
             SignInHelper.SignIn(ConfigurationManager.AppSettings["InvalidLogin"],
-            ConfigurationManager.AppSettings["InvalidPassword"]);
+                ConfigurationManager.AppSettings["InvalidPassword"]);
             SignInHelper.CheckErrorMessageDisplayed();
 
         }
 
         [Test]
-        public void ValidCredsLogin()
+        public void NoUsernameLogin()
         {
-            SignInHelper.SignIn(ConfigurationManager.AppSettings["ValidLogin"],
-            ConfigurationManager.AppSettings["ValidPassword"]);
-            SignInHelper.CheckSuccessfulSignIn();
+            SignInHelper.SignIn("",
+                ConfigurationManager.AppSettings["InvalidPassword"]);
+            SignInHelper.CheckErrorMessageDisplayed();
+
+        }
+
+        [Test]
+        public void NoPasswordLogin()
+        {
+            SignInHelper.SignIn(ConfigurationManager.AppSettings["InvalidLogin"],
+                "");
+            SignInHelper.CheckErrorMessageDisplayed();
+
         }
     }
 }
