@@ -41,5 +41,13 @@ namespace UnitTestProject1
             SignInHelper.CheckErrorMessageDisplayed();
 
         }
+
+        [Test]
+        public void NoCredsLogin()
+        {
+            SignInHelper.SignIn("","");
+            SignInHelper.CheckErrorMessageDisplayed();
+
+        }
     }
 }
